@@ -1,9 +1,10 @@
 /* General styles */
 body {
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: #eee;  /* Lighter text color for dark background */
     margin: 0;
     padding: 0;
+    background-color: #222;  /* Dark background color */
 }
 
 /* Header styles */
@@ -11,26 +12,46 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: #333;  /* Slightly lighter header background */
+    color: #eee;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;  /* Dark navbar background */
+}
+
+.nav-link {
+    color: #eee !important;  /* White color for nav links */
+}
+
+.nav-link:hover {
+    color: #fff !important;  /* Lighter color on hover */
 }
 
 /* Section styles */
 .section {
     padding: 60px 0;
+    background-color: #444;  /* Dark section background */
 }
 
 .section h2 {
     text-align: center;
     margin-bottom: 40px;
+    color: #eee;
 }
 
 .section p {
     max-width: 700px;
     margin: 0 auto;
+    color: #ccc;  /* Lighter text color for paragraphs */
 }
 
 /* Project styles */
 .card {
     transition: transform 0.2s;
+    background-color: #555;  /* Dark card background */
+    color: #eee;
 }
 
 .card:hover {
@@ -43,17 +64,36 @@ header {
     object-fit: cover;
 }
 
+.card-title {
+    color: #eee;  /* Lighter text color for card titles */
+}
+
+.card-text {
+    color: #ccc;  /* Lighter text color for card text */
+}
+
+.btn-primary {
+    background-color: #007bff;  /* Primary button color */
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;  /* Darker hover color */
+    border-color: #0056b3;
+}
+
 /* Footer styles */
 footer {
     background: #333;
-    color: #fff;
+    color: #eee;
     padding: 20px 0;
 }
 
+/* Link styles */
 a {
-    color: #007bff;
+    color: #007bff;  /* Default link color */
 }
 
 a:hover {
-    color: #0056b3;
+    color: #0056b3;  /* Link color on hover */
 }
