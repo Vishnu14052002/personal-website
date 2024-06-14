@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/style.css">
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-5">
+    <header class="bg-dark text-white text-center py-5 main">
         <div class="container">
             <h1>Vishnu</h1>
             <p class="lead">Junior Data Scientist</p>
@@ -108,15 +108,19 @@
                     event.preventDefault();
                     var hash = this.hash;
                     var target = $(hash);
+                    console.log(target)
 
                     // Calculate the offset to scroll to the section top
-                    var offsetTop = target.offset().top - $('.navbar').outerHeight() + 1;
+                    var offsetTop = target.offset().top - $('.main').outerHeight();
+                    console.log('target.offset().top '+target.offset().top)
+                    console.log('$outerHeight() '+$('.main').outerHeight())
+                    console.log('offsetTop '+offsetTop)
 
                     // Smooth scroll animation
                     $('html, body').animate({
                         scrollTop: offsetTop
                     }, 800, function () {
-                        window.location.hash = hash;
+                        //window.location.hash = hash;
                     });
                 }
             });
