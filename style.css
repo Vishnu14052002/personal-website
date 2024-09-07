@@ -13,6 +13,32 @@ header {
     z-index: 1000;
 }
 
+/* Ensure the container spans the full width */
+/* Full-width container */ */ */
+/* Apply full width to the section */
+#about {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}  
+
+/* Ensure container takes full width */
+#about .container-fluid .lead{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}  
+
+
+
+/* Justify text and adjust padding */
+#about .lead {
+    text-align: justify;
+    text-align-last: left;
+    margin: 0;
+    padding: 45 65px; 
+}
+
 /* Section styles */
 .section {
     padding: 60px 0;
@@ -24,7 +50,7 @@ header {
 }
 
 .section p {
-    max-width: 700px;
+    /* max-width: 700px; */
     margin: 0 auto;
 }
 
@@ -57,3 +83,9 @@ a {
 a:hover {
     color: #0056b3;
 }
+
+
+
+
+
+
