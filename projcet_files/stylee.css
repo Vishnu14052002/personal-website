@@ -101,3 +101,8 @@ a:hover {
 .back-button a:hover {
     color: #333; /* Darker color on hover */
 }
+
+
+p{
+    text-align: justify;
+}

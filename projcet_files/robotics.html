@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Vishnu</title>
+    <link href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/projcet_files/stylee.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* Main header section */
+        .main {
+            position: relative;
+        }
+
+        button{
+            color: white;
+        }
+
+        /* Back button styles */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+
+        .back-button:hover {
+            color: #ccc;
+        }
+
+        .back-button i {
+            margin-right: 8px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 576px) {
+            .back-button {
+                font-size: 1.2rem;
+                top: 10px;
+                left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-5 main">
+        <div class="container">
+            <button class="back-button" onclick="window.history.back();">
+                <a href="#" class="ankhor"> 
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+            </button>
+            <h1>Robotics Behaviour</h1>
+        </div>
+    </header>
+    <div class="content" id="roboticss">
+        <h3><a href="right-edge-following-pid.html" class="content-link">Right Edge Following Behaviour Using PID Controller</a></h3>
+        <p>This project utilizes a PID controller to make the robot follow the right edge.</p>
+
+        <h3><a href="right-edge-following-fuzzy.html" class="content-link">Right Edge Following Behaviour Using Fuzzy Logic Controller</a></h3>
+        <p>This project uses a fuzzy logic rule base to control the robot's movement along the right edge.</p>
+
+        <h3><a href="obstacle-avoidance-fuzzy.html" class="content-link">Obstacle Avoidance Behaviour Using Fuzzy Logic</a></h3>
+        <p>This project implements a fuzzy logic rule base to help the robot avoid obstacles.</p>
+
+        <h3><a href="subsumption-architecture.html" class="content-link">Subsumption Architecture</a></h3>
+        <p>This project combines right edge following and obstacle avoidance behaviours using subsumption architecture.</p>
+    </div>
+</body>
+</html>
+
