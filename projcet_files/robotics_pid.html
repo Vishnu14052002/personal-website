@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/projcet_files/stylee.css" rel="stylesheet">
+    <title>PID Controlled Robot with LIDAR</title>
+</head>
+<body>
+    <!-- <header class="bg-dark text-white text-center py-5 main">
+        <div class="he1">
+            <h1>Robotics Behaviour</h1>
+        </div>
+    </header>     
+    
+    <section id="about" class="section py-5 bg-light">
+        <div class="container-fluid">
+            <h2>About Me</h2>
+            <p class="lead">Welcome to my portfolio! I am a versatile professional with a strong foundation in Artificial Intelligence, machine learning, robotics, fuzzy logic, and app development. My expertise includes proficiency in Python, TensorFlow, Keras, Kotlin, and Android Studio, allowing me to create innovative solutions and develop functional applications. Driven by a commitment to continuous learning and a passion for tackling complex problems, I thrive in collaborative environments and enjoy working on projects that push the boundaries of technology. My experience at the University of Essex has equipped me with the skills and knowledge to contribute effectively to various technical challenges. I am eager to connect with others who share similar interests or who are interested in exploring potential opportunities.</p>
+        </div>
+    </section> -->
+
+    <a href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back
+    </a>
+
+    <header>
+        <div class="container">
+            <h1>Robotics PID controller</h1>
+            <h2>Right edge following behaviour using PID controller</h2>
+        </div>
+    </header>
+
+    <section class="overview" id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>In this project, I developed a Right Edge Following Robot using ROS (Robot Operating System) and a PID (Proportional-Integral-Derivative) controller to maintain a safe distance from obstacles while navigating along the right edge of walls or objects. This project is designed to integrate real-time sensor data with intelligent movement, making the robot capable of smooth and efficient obstacle avoidance.</p>
+        </div>
+    </section>
+
+    
+
+    <section class="features">
+        <div class="container">
+            <h3>Key Features</h3>
+            <h3>1. PID Controller Implementation</h3>
+            <ul>
+                <li>The robot uses a PID controller to adjust its movement, allowing precise and adaptive control. The PID controller continuously calculates an error value as the difference between the current distance from the wall (measured by LIDAR sensors) and a desired distance. It then applies corrections to the robot’s angular velocity to maintain a stable course.</li>
+                <li><strong>PID controller parameters:</strong>
+                    <ul>
+                        <li><strong>Proportional (P):</strong> Determines the reaction to the current error.</li>
+                        <li><strong>Integral (I):</strong> Accounts for the accumulation of past errors.</li>
+                        <li><strong>Derivative (D):</strong> Predicts future error based on the rate of change.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>2. LIDAR Sensor Data Integration</h3>
+            <ul>
+                <li>The robot employs LIDAR sensors to continuously scan the environment and retrieve distance measurements from the surroundings. The regions scanned include the front, right, and left of the robot.</li>
+                <li>The robot focuses on the right edge for guidance, ensuring it stays at a safe, predefined distance from obstacles.</li>
+            </ul>
+            <video width="100%" height="auto" controls>
+                <source src="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/content/robot_pid1.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    
+
+    <!-- Code Breakdown Section -->
+    <section class="code-breakdown">
+        <div class="container">
+            <h3>Code Breakdown</h3>
+            <ul>
+                <li><strong>LaserScan Callback:</strong> The LIDAR sensor readings are processed in the <code>clbk_laser()</code> function. It divides the environment into different regions such as front, right, front-right, front-left, and left, providing the robot with spatial awareness.</li>
+                <li><strong>Movement Function:</strong> Using the PID controller, it adjusts the robot’s angular velocity <code>(msg.angular.z)</code> based on the difference between the current and desired distances from the right wall or obstacle. It keeps the robot moving forward at a controlled pace <code>(msg.linear.x)</code>.</li>
+                <li><strong>Timer Callback:</strong> A timer is used to periodically publish the calculated velocity commands, ensuring that the robot moves continuously based on the latest sensor readings.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h3>How It Works</h3>
+            <ol>
+                <li>The robot starts moving forward.</li>
+                <li>The LIDAR sensors detect obstacles, and the robot focuses on maintaining a specified distance from the right wall or object.</li>
+                <li>If the robot gets too close to the wall, the PID controller adjusts its course, steering it away.</li>
+                <li>The robot continuously moves forward, making slight adjustments to its path to stay aligned with the right edge.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="conclusion">
+        <div class="container">
+            <h3>Conclusion</h3>
+            <p>By integrating LIDAR data and a PID controller, the robot can intelligently follow the right edge behaviour. This solution provides a robust and dynamic way of achieving autonomous navigation in cluttered environments.</p>
+        </div>
+    </section>
+
+    <div style="text-align: center; margin-top: 30px; padding-bottom: 10px;">
+        <a href="###" style="background-color: #333; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 1.2rem; display: inline-block;">
+            <i class="fab fa-github" style="margin-right: 10px;"></i> View on GitHub
+        </a>
+    </div>
+
+</body>
+</html>

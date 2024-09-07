@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/projcet_files/stylee.css" rel="stylesheet">
+    <title>packman genetic algorithm game</title>
+</head>
+<body>
+    <!-- <header class="bg-dark text-white text-center py-5 main">
+        <div class="he1">
+            <h1>Robotics Behaviour</h1>
+        </div>
+    </header>     
+    
+    <section id="about" class="section py-5 bg-light">
+        <div class="container-fluid">
+            <h2>About Me</h2>
+            <p class="lead">Welcome to my portfolio! I am a versatile professional with a strong foundation in Artificial Intelligence, machine learning, robotics, fuzzy logic, and app development. My expertise includes proficiency in Python, TensorFlow, Keras, Kotlin, and Android Studio, allowing me to create innovative solutions and develop functional applications. Driven by a commitment to continuous learning and a passion for tackling complex problems, I thrive in collaborative environments and enjoy working on projects that push the boundaries of technology. My experience at the University of Essex has equipped me with the skills and knowledge to contribute effectively to various technical challenges. I am eager to connect with others who share similar interests or who are interested in exploring potential opportunities.</p>
+        </div>
+    </section> -->
+
+    <a href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back
+    </a>
+
+    <header>
+        <div class="container">
+            <h1>Genetic Algorithm Pac-Man Game</h1>
+            <h2>Using Genetic Algorithms to optimize Pac-Man's AI for better performance</h2>
+        </div>
+    </header>
+
+    <section class="overview" id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>In this project, I applied Genetic Algorithms (GA) to develop an AI agent capable of playing the classic Pac-Man game more effectively. The goal was to optimize the agent's performance by evolving a set of parameters that govern its decision-making process, ultimately enhancing its ability to navigate the game, avoid ghosts, and consume food.</p>
+        </div>
+    </section>
+
+    <section class="details">
+        <div class="container">
+            <h2>Project Details</h2>
+            <h3>1. Genetic Algorithm Application</h3>
+            <p>The core of this project involves using a Genetic Algorithm to fine-tune the behaviour of the Pac-Man agent. Genetic Algorithms are a class of optimization algorithms inspired by the principles of natural selection and genetics. In this project, the GA was employed to evolve a population of potential solutions (chromosomes), where each chromosome represents a different set of parameters for the Pac-Man agent.</p>
+            
+            <h3>2. Agent Design</h3>
+            <p>The Pac-Man agent's behaviour is governed by a set of parameters encoded in a chromosome. Each chromosome is an array of values that determine the agent's strategies for various aspects of the game:</p>
+            <ul>
+                <li>1. Avoiding dangerous ghosts</li>
+                <li>2. Seeking and consuming food</li>
+                <li>3. Targeting scared ghosts when they are vulnerable</li>
+            </ul>
+            <p>The agent's effectiveness is evaluated based on its game score, which serves as the fitness function in the GA.</p>
+
+            <h3>3. Evolution Process</h3>
+            <ul>
+                <li><strong>Initialization:</strong> A population of chromosomes is randomly generated.</li>
+                <li><strong>Evaluation:</strong> Each chromosome is tested by running the Pac-Man game, and its performance is assessed based on the final score achieved.</li>
+                <li><strong>Selection:</strong> The best-performing chromosomes are selected based on their fitness scores.</li>
+                <li><strong>Crossover:</strong> Pairs of chromosomes are combined to produce offspring, combining traits from both parents.</li>
+                <li><strong>Mutation:</strong> Random changes are introduced to offspring chromosomes to maintain genetic diversity.</li>
+            </ul>
+            
+            <!-- Image placeholder -->
+            <img src="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/content/genetic_algo_packmangame_1.png" alt="Genetic Algorithm Evolution Process" class="responsive-image">
+
+            <h3>4. Results</h3>
+            <p>After running the genetic algorithm, the agent’s performance improved as it adapted to better handle various game scenarios. The final optimized chromosome values were hardcoded into the agent for practical use.</p>
+            
+            <!-- Video placeholder -->
+            <video width="100%" height="auto" controls>
+                <source src="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/content/genetic_algo_packmangame_3.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>5. Visualization</h3>
+            <p>The project includes a visual representation of the GA's progress over generations. A plot was generated to show how the best fitness score evolved, demonstrating the improvement in the agent's performance over time.</p>
+            
+            <!-- Image placeholder -->
+            <img src="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/content/genetic_algo_packmangame_2.png" alt="Visualization of GA progress" class="responsive-image">
+        </div>
+    </section>
+
+    <section class="tech-stack">
+        <div class="container">
+            <h2>Technical Stack</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python</li>
+                <li><strong>Libraries:</strong> NumPy, Matplotlib</li>
+                <li><strong>Game Framework:</strong> Pac-Man Game Framework (CE811)</li>
+                <li><strong>Optimization Algorithm:</strong> Genetic Algorithm</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="conclusion">
+        <div class="container">
+            <h2>Conclusion</h2>
+            <p>This project showcases the application of Genetic Algorithms to enhance game-playing AI, demonstrating how evolutionary techniques can be used to optimize complex decision-making processes. By integrating GA with the Pac-Man game, the project illustrates how intelligent agents can be developed and refined to achieve better performance through adaptive learning.</p>
+        </div>
+    </section>
+
+    <div style="text-align: center; margin-top: 30px; padding-bottom: 10px;">
+        <a href="###" style="background-color: #333; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 1.2rem; display: inline-block;">
+            <i class="fab fa-github" style="margin-right: 10px;"></i> View on GitHub
+        </a>
+    </div>
+
+
+</body>
+</html>

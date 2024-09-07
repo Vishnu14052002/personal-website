@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/projcet_files/stylee.css" rel="stylesheet">
+    <title>Toxic Word Prediction</title>
+</head>
+<body>
+
+    <a href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back
+    </a>
+
+    <header>
+        <div class="container">
+            <h1>Toxic Word Prediction</h1>
+            <h2>Using Machine Learning Models to Classify Toxic Words</h2>
+        </div>
+    </header>
+
+    <section class="overview" id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>In this project, I developed a system for predicting toxic words using a combination of machine learning models. The objective was to accurately classify words as toxic or non-toxic by leveraging both Naive Bayes (Generative) and Random Forest (Discriminative) models. This approach highlights the capabilities of different machine learning techniques in handling text classification tasks.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3>Project Structure</h3>
+            <ul>
+                <li><strong>models/:</strong> Contains the saved machine learning models.</li>
+                <li><strong>model_dis/:</strong> Includes the trained Naive Bayes model.</li>
+                <li><strong>modes_dis/:</strong> Includes the trained Random Forest model.</li>
+                <li><strong>text_analysis_final.ipynb:</strong> A comprehensive Jupyter notebook that encompasses the entire workflow, including data pre-processing, model training, and prediction.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="preprocessing">
+        <div class="container">
+            <h3>Pre-processing Steps</h3>
+            <ul>
+                <li>Removal of stop words and punctuation</li>
+                <li>Tokenization of each word</li>
+                <li>These steps were essential for preparing the dataset for effective model training.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="models">
+        <div class="container">
+            <h3>Models Used</h3>
+            <ul>
+                <li><strong>1. Naive Bayes Model (Generative Approach):</strong></li>
+                <ul>
+                    <li>Utilizes a generative approach to determine whether text is toxic or non-toxic.</li>
+                    <li>Trained and saved in the <code>models/model_dis/</code> directory.</li>
+                </ul>
+                <li><strong>2. Random Forest Model (Discriminative Approach):</strong></li>
+                <ul>
+                    <li>Applies a discriminative approach for classification tasks using Random Forest.</li>
+                    <li>Trained and saved in the <code>models/modes_dis/</code> directory.</li>
+                </ul>
+            </ul>
+
+            <p>Additionally, I explored other models such as Support Vector Machine (SVM), Logistic Regression, Long Short-Term Memory (LSTM), and Convolutional Neural Networks (CNN).</p>
+        </div>
+    </section>
+
+    <section class="file-descriptions">
+        <div class="container">
+            <h3>File Descriptions</h3>
+            <ul>
+                <li><strong>text_analysis_final.ipynb:</strong> Main Jupyter notebook for data pre-processing, model training, and predictions.</li>
+                <li><strong>models/model_dis/:</strong> Directory with the trained Naive Bayes model.</li>
+                <li><strong>models/modes_dis/:</strong> Directory with the trained Random Forest model.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="conclusion">
+        <div class="container">
+            <h3>Conclusion</h3>
+            <p>This project showcases the application of Naive Bayes and Random Forest models in classifying toxic words. By running the provided Jupyter notebook, you can replicate the entire process from data pre-processing to model training and prediction.</p>
+        </div>
+    </section>
+
+    <div style="text-align: center; margin-top: 30px; padding-bottom: 10px;">
+        <a href="###" style="background-color: #333; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 1.2rem; display: inline-block;">
+            <i class="fab fa-github" style="margin-right: 10px;"></i> View on GitHub
+        </a>
+    </div>
+
+</body>
+</html>

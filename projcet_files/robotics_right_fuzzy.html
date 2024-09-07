@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/projcet_files/stylee.css" rel="stylesheet">
+    <title>Fuzzy Logic Right Edge Following Robot</title>
+</head>
+<body>
+    <a href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back
+    </a>
+
+    <header>
+        <div class="container">
+            <h1>Robotics Fuzzy Logic Controller</h1>
+            <h2>Right edge following behaviour using Fuzzy Logic</h2>
+        </div>
+    </header>
+
+    <section class="overview" id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>A new autonomous navigation system designed to follow a right-edge following behaviour using fuzzy logic. This method enhances the robot's ability to avoid obstacles and navigate smoothly through complex environments.</p>
+        </div>
+    </section>
+
+    <section class="right-edge-following" id="right-edge-following">
+        <div class="container">
+            <h3>Right-Edge Following</h3>
+            <p>Right-edge following is a navigation strategy where the robot maintains a fixed distance from obstacles on its right-hand side. This enables it to move efficiently along paths while avoiding collisions, particularly useful in indoor settings such as warehouses, homes, or office spaces.</p>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h3>The Power of Fuzzy Logic</h3>
+            <p>Our system uses fuzzy logic to handle decision-making, making the robot’s behaviour more flexible and adaptable. Unlike traditional logic systems that operate in binary (yes/no or 0/1), fuzzy logic allows for degrees of truth. This enables smoother and more intuitive navigation, even in uncertain or changing environments.</p>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h3>How it Works</h3>
+            <ol>
+                <li><strong>LiDAR Data Processing:</strong> The robot divides the sensor data into regions (e.g., front, right-front, right-back, left, etc.), providing a comprehensive view of its surroundings.</li>
+                <li><strong>Fuzzy Logic Decision Making:</strong> 
+                    <ul>
+                        <li>The distances to obstacles are classified into categories: near, medium, and far.</li>
+                        <li>Based on these distance readings, a set of fuzzy rules determines how the robot should adjust its movement. For instance, if something is detected close by on the right, the robot will steer left to avoid it. If the right side is clear, it will adjust its path to follow the edge.</li>
+                        <li>Through defuzzification (using the Height defuzzification method), the fuzzy system calculates the robot’s speed and angular velocity, creating smooth transitions between different movement commands.</li>
+                    </ul>
+                </li>
+                <li><strong>Safe and Smooth Navigation:</strong> With this approach, the robot can smoothly adapt its trajectory and speed, avoiding sudden turns or stops while maintaining a safe distance from obstacles.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="key-features" id="key-features">
+        <div class="container">
+            <h3>Key Features</h3>
+            <ul>
+                <li><strong>Dynamic Obstacle Detection:</strong> Continuously adjusting to the robot's surroundings, making it well-suited for environments where obstacles may move or change.</li>
+                <li><strong>Efficient Edge Following:</strong> The robot follows the right edge with precision, ensuring it stays on track while avoiding collisions.</li>
+                <li><strong>Real-Time Adaptation:</strong> The fuzzy logic system updates in real-time, ensuring responsive and effective control over the robot’s navigation.</li>
+                <li><strong>Flexible and Modular:</strong> The solution is adaptable and can be easily integrated with different robot platforms and environments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="video-upload">
+        <div class="container">
+            <h3>Demonstration</h3>
+            <video width="100%" height="auto" controls>
+                <source src="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/content/robot_right_fuzzy1.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Optionally embed or link a video here -->
+        </div>
+    </section>
+
+    <section class="code-overview" id="code-overview">
+        <div class="container">
+            <h3>Code Overview</h3>
+            <p>This fuzzy logic implementation is built to follow right edge following behaviour, enabling easy integration with robotic platforms and providing robust communication between different components of the system.</p>
+        </div>
+    </section>
+
+    <div style="text-align: center; margin-top: 30px; padding-bottom: 10px;">
+        <a href="https://github.com/YourGitHubProfile" target="_blank" style="background-color: #333; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 1.2rem; display: inline-block;">
+            <i class="fab fa-github" style="margin-right: 10px;"></i> View on GitHub
+        </a>
+    </div>
+</body>
+</html>

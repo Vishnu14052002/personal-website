@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/projcet_files/stylee.css" rel="stylesheet">
+    <title>Combined Obstacle Avoidance and Right Edge Following</title>
+</head>
+<body>
+    <a href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back
+    </a>
+
+    <header>
+        <div class="container">
+            <h1>Combined Obstacle Avoidance and Right Edge Following</h1>
+            <h2>Using Subsumption Architecture</h2>
+        </div>
+    </header>
+
+    <section class="overview" id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>This project demonstrates a sophisticated robot control system that combines obstacle avoidance and edge-following behaviours using a subsumption architecture. By prioritizing obstacle avoidance, this system ensures safe navigation in complex environments while still adhering to edge-following rules when obstacles are not detected.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3>Key Features</h3>
+            <h3>1. Subsumption Architecture</h3>
+            <ul>
+                <li><strong>Hierarchy of Behaviours:</strong> The system uses a hierarchical approach to prioritize behaviours. Obstacle avoidance takes precedence over edge-following, and if neither is active, the robot continues straight.</li>
+                <li><strong>Behaviour Integration:</strong> Combines two distinct behaviours—obstacle avoidance and right edge-following—allowing the robot to adapt dynamically to its surroundings.</li>
+            </ul>
+
+            <h3>2. Obstacle Avoidance</h3>
+            <ul>
+                <li><strong>Sensor Inputs:</strong> The robot uses LaserScan data from various sensors to detect obstacles.</li>
+                <li><strong>Decision Making:</strong> When obstacles are detected, the system calculates defuzzified values for direction and speed to navigate around them.</li>
+                <li><strong>Behaviour Activation:</strong> If the Left Front Sensor (LFS) or Middle Front Sensor (MFS) detects an obstacle, the robot prioritizes avoidance behaviour.</li>
+            </ul>
+
+            <h3>3. Right Edge Following</h3>
+            <ul>
+                <li><strong>Edge Detection:</strong> When obstacles are not present, the robot uses the Right Front Sensor (RFS) and Right Back Sensor (RBS) to follow the right edge.</li>
+                <li><strong>Behaviour Activation:</strong> If no obstacles are detected and the right edge is present, the robot switches to edge-following behaviour to navigate along the edge.</li>
+            </ul>
+
+            <h3>4. Straight Movement</h3>
+            <ul>
+                <li><strong>Default Behaviour:</strong> In the absence of both obstacles and a right edge, the robot moves straight with a predefined speed.</li>
+            </ul>
+
+            <video width="100%" height="auto" controls>
+                <source src="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/content/robot_combined_subsumption.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <div class="container">
+            <h3>Achievements</h3>
+            <ul>
+                <li><strong>Dynamic Navigation:</strong> Implemented a robust control system that dynamically adapts to obstacles and edges.</li>
+                <li><strong>Prioritized Behaviours:</strong> Successfully used subsumption architecture to prioritize safety (obstacle avoidance) over edge-following.</li>
+                <li><strong>Modular Design:</strong> Designed modular functions for obstacle avoidance and edge-following, allowing for flexible adjustments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <div style="text-align: center; margin-top: 30px; padding-bottom: 10px;">
+        <a href="###" style="background-color: #333; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 1.2rem; display: inline-block;">
+            <i class="fab fa-github" style="margin-right: 10px;"></i> View on GitHub
+        </a>
+    </div>
+
+</body>
+</html>
