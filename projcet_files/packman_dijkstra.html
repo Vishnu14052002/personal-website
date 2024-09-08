@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/projcet_files/stylee.css" rel="stylesheet">
+    <title>Pac-Man AI with Dijkstra's Algorithm</title>
+</head>
+<body>
+    <!-- <header class="bg-dark text-white text-center py-5 main">
+        <div class="he1">
+            <h1>Robotics Behaviour</h1>
+        </div>
+    </header> --> 
+    
+    <a href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back
+    </a>
+
+    <header>
+        <div class="container">
+            <h1>A Rule-Based Pac-Man Agent with Dijkstra’s Shortest Path Algorithm</h1>
+            <h2>Optimizing Ghost Avoidance and Food Collection using Dijkstra’s Algorithm</h2>
+        </div>
+    </header>
+
+    <section class="overview" id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>In this project, I developed an advanced Pac-Man AI agent utilizing Dijkstra’s Algorithm for pathfinding. This agent is designed to make intelligent decisions based on the layout of the maze, incorporating a sophisticated evaluation function to handle various game scenarios more effectively.</p>
+        </div>
+    </section>
+
+    <section class="details">
+        <div class="container">
+            <h2>Project Details</h2>
+
+            <h3>1. Pathfinding with Dijkstra’s Algorithm</h3>
+            <p>The key feature of this project is the implementation of Dijkstra’s Algorithm to enhance the Pac-Man agent’s navigation capabilities. Dijkstra’s Algorithm is a classic algorithm used for finding the shortest paths between nodes in a graph. By applying this algorithm to the Pac-Man game’s maze layout, the agent can calculate optimal paths to avoid ghosts and target food pellets.</p>
+            
+            <h3>2. Implementation Highlights</h3>
+            <p>The following pathfinding functions are essential for the agent's decision-making:</p>
+            <ul>
+                <li><strong>calculate_neighbouring_nodes:</strong> Computes neighbouring nodes for a given position, considering walls and layout boundaries.</li>
+                <li><strong>calculate_gscores:</strong> Computes the shortest path distances from a start node to all other nodes in the maze using Dijkstra’s Algorithm.</li>
+                <li><strong>calc_path_A_to_B:</strong> Determines the optimal path between two points in the maze, translating this into a sequence of Pac-Man movements.</li>
+                <li><strong>calc_path_to_point:</strong> Similar to calc_path_A_to_B but adapted for specific targets like food or ghosts.</li>
+            </ul>
+
+            <h3>3. Agent Design</h3>
+            <p>The Pac-Man agent's decision-making is based on the following core methods:</p>
+            <ul>
+                <li><strong>getAction Method:</strong> Chooses the best action from legal moves based on the evaluation of potential successor states.</li>
+                <li><strong>evaluateBoardState Method:</strong> Uses Dijkstra’s Algorithm to calculate distances to food, ghosts, and scared ghosts, helping determine the best move. It provides a more accurate assessment of the maze layout.</li>
+            </ul>
+
+            <h3>4. Evaluation Function</h3>
+            <p>The evaluation function ensures the agent considers the following factors:</p>
+            <ul>
+                <li><strong>Distance to Nearest Food:</strong> Rewards the agent for being closer to food pellets.</li>
+                <li><strong>Proximity to Ghosts:</strong> Penalizes the agent for being close to dangerous ghosts and rewards it for targeting scared ghosts.</li>
+                <li><strong>Remaining Food Pellets:</strong> Additional incentives are provided based on the number of remaining food pellets.</li>
+            </ul>
+
+            <h3>5. Results</h3>
+            <p>This approach ensures that the Pac-Man agent can navigate the maze more intelligently by considering both immediate and strategic factors. The agent's performance was evaluated through gameplay, demonstrating improved decision-making capabilities in various maze scenarios.</p>
+            
+            <!-- Video placeholder -->
+            <video width="100%" height="auto" controls>
+                <source src="../content/dijkstra1.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section class="tech-stack">
+        <div class="container">
+            <h2>Technical Stack</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python</li>
+                <li><strong>Libraries:</strong> NumPy, Matplotlib</li>
+                <li><strong>Game Framework:</strong> Pac-Man Game Framework (CE811)</li>
+                <li><strong>Pathfinding Algorithm:</strong> Dijkstra’s Algorithm</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="conclusion">
+        <div class="container">
+            <h2>Conclusion</h2>
+            <p>This project demonstrates the application of pathfinding algorithms in game AI, highlighting how advanced techniques can enhance decision-making and navigation in complex environments. By integrating Dijkstra’s Algorithm into the Pac-Man AI, the project showcases a significant advancement in creating intelligent and strategic game agents.</p>
+        </div>
+    </section>
+
+    <div style="text-align: center; margin-top: 30px; padding-bottom: 10px;">
+        <a href="###" style="background-color: #333; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 1.2rem; display: inline-block;">
+            <i class="fab fa-github" style="margin-right: 10px;"></i> View on GitHub
+        </a>
+    </div>
+
+</body>
+</html>

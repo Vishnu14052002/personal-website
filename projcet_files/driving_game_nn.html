@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="stylee.css" rel="stylesheet">
+    <title>Neural Network Car Driven by Genetic Algorithm</title>
+</head>
+<body>
+    <a href="/Users/vishnug/Desktop/desktop 1/desktop1/personal website/personal-website/index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back
+    </a>
+
+    <header>
+        <div class="container">
+            <h1>Neural Network Car</h1>
+            <h2>Driven Using a Genetic Algorithm</h2>
+        </div>
+    </header>
+
+    <section class="overview" id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>Welcome to my Neural-Network Driving Game! This project was created using Python, featuring a racing game where a car learns to drive on a track using a custom-built neural network and a genetic algorithm. Unlike many other projects that rely on machine learning libraries, I implemented the neural network from scratch using NumPy, which gave me deeper control over how the network operates and evolves.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3>Key Features</h3>
+            <h3>1. Genetic Algorithm-Driven Learning</h3>
+            <ul>
+                <li>The core innovation in this game is the use of a genetic algorithm (GA) to train the car's neural network to navigate the track. The GA simulates the process of natural selection, gradually evolving better-performing neural network "chromosomes" (sets of weights and biases) over hundreds of generations.</li>
+            </ul>
+
+            <h3>2. Hard-Coded Neural Network</h3>
+            <ul>
+                <li>Instead of using libraries like TensorFlow or PyTorch, I manually built the neural network using NumPy. The network has one hidden layer with a custom number of nodes, and it uses <strong>tanh</strong> activation functions to produce decisions for steering and acceleration.</li>
+            </ul>
+
+            <h3>3. Three Driving Agents</h3>
+            <ul>
+                <li><strong>Keyboard Agent:</strong> Manual driving using keyboard inputs.</li>
+                <li><strong>Autonomous Agent:</strong> A basic hand-coded algorithm controls the car based on its position on the track.</li>
+                <li><strong>Neural Agent:</strong> The neural network agent improves over time through genetic algorithm training.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Code Breakdown Section -->
+    <section class="code-breakdown">
+        <div class="container">
+            <h3>How It Works</h3>
+            <ol>
+                <li>The car tries to drive around a randomly generated track without crashing. It starts at a designated point and uses steering and speed controls to stay on track.</li>
+                <li><strong>Neural Network:</strong> Takes in inputs like the car's position relative to the track, orientation, distance travelled, and other factors. It processes this through a hidden layer and outputs controls for steering and speed.</li>
+                <li><strong>Genetic Algorithm:</strong> Generates initial random chromosomes (neural network weights and biases), tests them, and selects the best-performing ones to evolve over generations.</li>
+            </ol>
+            <video width="100%" height="auto" controls>
+                <source src="../content/NN_car_genetic_2.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Custom Features Section -->
+    <section class="custom-features">
+        <div class="container">
+            <h3>Custom Features</h3>
+            <ul>
+                <li><strong>Track Layout:</strong> The track includes curves and straight sections for a challenging driving experience.</li>
+                <li><strong>Collision Detection:</strong> The car must stay within the track bounds, or it will crash and reset.</li>
+                <li><strong>Graphical Display:</strong> The game uses Pygame for real-time graphics, showing the track and car's movements.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Why This Project is Unique -->
+    <section class="unique-features">
+        <div class="container">
+            <h3>Why This Project is Unique</h3>
+            <ul>
+                <li><strong>No External Libraries for Neural Networks:</strong> The neural network is built from scratch using NumPy, providing deeper control over the learning process.</li>
+                <li><strong>Evolutionary Learning:</strong> The genetic algorithm optimizes the neural network without backpropagation, learning through mutation and natural selection.</li>
+                <li><strong>Real-Time Visualization:</strong> The learning process is visualized in real-time as the car improves its performance with each generation.</li>
+            </ul>
+            <img src="../content/NN_car_genetic_1.png" alt="Visualization of GA progress" class="responsive-image">
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="technologies">
+        <div class="container">
+            <h3>Technologies Used</h3>
+            <ul>
+                <li><strong>Python:</strong> The core language for game logic and neural network operations.</li>
+                <li><strong>NumPy:</strong> Handles matrix operations in the neural network.</li>
+                <li><strong>Pygame:</strong> Used for rendering the game graphics in real time.</li>
+                <li><strong>Genetic Algorithm:</strong> Used to evolve the neural network’s weights and biases over generations.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="conclusion">
+        <div class="container">
+            <h3>Conclusion</h3>
+            <p>With this project, I explored the intersection of artificial intelligence, game development, and evolutionary computation. It serves as both a fun game and a demonstration of how neural networks can learn through genetic evolution, providing insight into AI-driven simulations.</p>
+        </div>
+    </section>
+
+    <div style="text-align: center; margin-top: 30px; padding-bottom: 10px;">
+        <a href="###" style="background-color: #333; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 1.2rem; display: inline-block;">
+            <i class="fab fa-github" style="margin-right: 10px;"></i> View on GitHub
+        </a>
+    </div>
+
+</body>
+</html>
